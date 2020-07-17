@@ -2657,7 +2657,6 @@ ol {
 }
 
 /* Medium Device = 1200px */
-
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.header__menu ul li {
 		margin-right: 18px;
@@ -2686,6 +2685,7 @@ ol {
     .recom_music{position: absolute;top: -156px;right: 0; z-index: 109}
     .recom_music_at {right: 20%;}
     footer .spad {padding-bottom: 0;}
+    .about{text-align: center}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.header__right__social {
