@@ -2624,6 +2624,30 @@ ol {
 	margin-bottom: 34px;
 }
 
+
+/*음악주의사항*/
+.track{position: relative}
+.music_text{position: absolute; top: 60px; z-index: 99; margin-left: 15px; border: 2px solid #e1e1e1; border-radius: 50px; padding: 5px 8px; display: none; background: #fff}
+.music_text:before{ background-image: url(../img/bottom_hover.png); background-repeat: no-repeat; content: "＇＇"; color: #fff; position: absolute; top: 35px; left: 50%}
+
+/*추천리스트*/
+.recom_music{cursor: pointer}
+.recom_music_at{position: absolute; z-index: 29; background: #fff; width: 400px; right: 80%; top: 50%; padding: 30px 50px; line-height: 45px; text-align: left; border: 1px solid #e1e1e1; display: none}
+.recom_music_at.art{display: block}
+.recom_music_at span{position: absolute; right: 30px; top: 23px; font-size: 2rem; cursor: pointer}
+.recom_music_at p{text-align: center; font-size: 1rem;}
+.recom_music_at ul{list-style:decimal;}
+.recom_music_at ul li{padding-left:20px;}
+.recom_music_at ul li a{color: #363636; display: block}
+.recom_music_at ul li:hover,.recom_music_at ul li a:hover{color: #5C00CE}
+/*메인뒷배경*/
+.hero_backcolor{
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;}
+
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 
 @media only screen and (min-width: 1200px) {
@@ -2652,10 +2676,17 @@ ol {
 		text-align: center;
 		margin-bottom: 10px;
 	}
+    /**/
+    .br_de{display: none}
+    .about img{padding-top: 160px}
+    .recom_music_at {right: 70%;}
 }
-
 /* Tablet Device = 768px */
-
+@media only screen and (min-width: 768px) and (max-width: 991px) {    /**/
+    .recom_music{position: absolute;top: -156px;right: 0; z-index: 109}
+    .recom_music_at {right: 20%;}
+    footer .spad {padding-bottom: 0;}
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.header__right__social {
 		display: none;
@@ -2709,15 +2740,26 @@ ol {
 		padding-right: 0;
 	}
 	.countdown {
-		padding-bottom: 776px;
+		padding-bottom: 160px;
 	}
 	.footer {
 		margin-top: -740px;
 		background-position: top 0 left 19%;
+        padding-bottom: 0;
 	}
+    .center_me{margin-top: 470px;}
+
 }
 
 /* Wide Mobile = 480px */
+    @media only screen and (max-width: 767px) {
+    .recom_music{position: absolute;top: -30px;right: 28%; z-index: 109}
+    .recom_music_at {right: 13%;}
+    footer .spad {padding-bottom: 0;}
+    .track__content {margin-top: 50px;}
+    .center_me {margin-top: 0px;}
+    /*갤러리버튼의 경우 slick-theme에서 수정함*/
+}
 
 @media only screen and (max-width: 767px) {
 	.hero {
@@ -2772,9 +2814,6 @@ ol {
 		margin-bottom: 30px;
 		width: 50%;
 		float: left;
-	}
-	.footer__social {
-		text-align: left;
 	}
 	.skills__content {
 		height: auto;
@@ -2857,12 +2896,10 @@ ol {
 	.tours__item__text {
 		padding-right: 0;
 	}
-	.countdown {
-		padding-bottom: 940px;
-	}
 	.footer {
-		margin-top: -940px;
+		margin-top: -300px;
 		background-position: top 0 left 19%;
+        padding-bottom: 0;
 	}
 }
 
@@ -2934,33 +2971,10 @@ ol {
 		margin-bottom: 10px;
 	}
 	.countdown {
-		padding-bottom: 980px;
+		padding-bottom: 160px;
 	}
 	.footer {
-		margin-top: -970px;
+		margin-top: -270px;
 		background-position: top 0 left 19%;
 	}
 }
-
-/*음악주의사항*/
-.track{position: relative}
-.music_text{position: absolute; top: 60px; z-index: 99; margin-left: 15px; border: 2px solid #e1e1e1; border-radius: 50px; padding: 5px 8px; display: none; background: #fff}
-.music_text:before{ background-image: url(../img/bottom_hover.png); background-repeat: no-repeat; content: "＇＇"; color: #fff; position: absolute; top: 35px; left: 50%}
-
-/*추천리스트*/
-.recom_music{cursor: pointer}
-.recom_music_at{position: absolute; z-index: 29; background: #fff; width: 400px; right: 90%; top: 50%; padding: 30px 50px; line-height: 45px; text-align: left; border: 1px solid #e1e1e1; display: none}
-.recom_music_at.art{display: block}
-.recom_music_at span{position: absolute; right: 30px; top: 23px; font-size: 2rem; cursor: pointer}
-.recom_music_at p{text-align: center; font-size: 1rem;}
-.recom_music_at ul{list-style:decimal;}
-.recom_music_at ul li{padding-left:20px;}
-.recom_music_at ul li a{color: #363636; display: block}
-.recom_music_at ul li:hover,.recom_music_at ul li a:hover{color: #5C00CE}
-/*메인뒷배경*/
-.hero_backcolor{
-    background-color: rgba(0,0,0,0.3);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;}
